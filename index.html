@@ -22,48 +22,48 @@
       <ul>
         <li>
           <a href="#diagnostico">1. Diagnóstico y Reflexión Estratégica</a>
-          <ul>
+          <!-- <ul>
             <li><a href="#analisis-interno">Análisis interno</a></li>
             <li><a href="#analisis-externo">Análisis externo</a></li>
             <li><a href="#areas-prioritarias">Áreas prioritarias</a></li>
-          </ul>
+          </ul> -->
         </li>
         <li>
           <a href="#experiencia">2. Transformando la experiencia del cliente</a>
-          <ul>
+          <!-- <ul>
             <li><a href="#buyerpersona">Buyer persona</a></li>
             <li><a href="#empatia">Mapa de empatía</a></li>
             <li><a href="#journey">Mapa de experiencia</a></li>
             <li><a href="#modelo-negocio">Modelo de negocio</a></li>
-          </ul>
+          </ul> -->
         </li>
         <li>
           <a href="#habilitando">3. Habilitando la Transformación</a>
-          <ul>
+          <!-- <ul>
             <li><a href="#lienzo-transformacion">Lienzo de transformación</a></li>
             <li><a href="#tecnologias">Tecnologías y herramientas</a></li>
             <li><a href="#priorizacion">Priorización digital</a></li>
-          </ul>
+          </ul> -->
         </li>
         <li>
           <a href="#gestionando">4. Gestionando el Cambio</a>
-          <ul>
+          <!-- <ul>
             <li><a href="#kpis">Objetivos y KPIs</a></li>
             <li><a href="#plan-accion">Plan de acción</a></li>
             <li><a href="#equipo">Equipo líder del cambio</a></li>
             <li><a href="#formacion">Análisis de formación</a></li>
             <li><a href="#cronograma">Cronograma</a></li>
             <li><a href="#presupuesto">Presupuesto e inversión</a></li>
-          </ul>
+          </ul> -->
         </li>
         <li>
           <a href="#sectores">5. Sectores de Aplicación</a>
-          <ul>
+          <!-- <ul>
             <li><a href="#citas-online">Citas y reservas online</a></li>
             <li><a href="#experiencia-digital">Experiencia digital del cliente</a></li>
             <li><a href="#marketing">Marketing y redes sociales</a></li>
             <li><a href="#reputacion">Presencia online y reputación</a></li>
-          </ul>
+          </ul> -->
         </li>
       </ul>
     </li>
@@ -82,7 +82,7 @@
     <section id="indice" class="section">
   <h2>Introducción al Plan de Transformación Digital</h2>
   <div class="two-columns">
-    <ol>
+    <git>
       <li>Diagnóstico y Reflexión Estratégica
         <ul>
           <li>Análisis interno de la situación digital actual</li>
@@ -105,7 +105,7 @@
           <li>Priorización de soluciones digitales</li>
         </ul>
       </li>
-    </ol>
+    </git>
 
     <ol start="4">
       <li>Gestionando el Cambio
@@ -297,8 +297,16 @@
   // Cerrar menú al hacer clic en cualquier enlace (solo en móvil)
   navbar.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
-    if (navbar.classList.contains('active') && link.getAttribute('href') !== '#indice') {
-      navbar.classList.remove('active');
+    if (navbar.classList.contains('active')) {
+      if (link.getAttribute('href') === '#indice') {
+        // Cierra el menú después de 2 segundos solo para #indice
+        setTimeout(() => {
+          navbar.classList.remove('active');
+        }, 2000);
+      } else {
+        // Cierra el menú inmediatamente para otros enlaces
+        navbar.classList.remove('active');
+      }
     }
   });
 });
