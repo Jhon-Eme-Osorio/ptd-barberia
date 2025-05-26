@@ -1,316 +1,437 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Plan de Transformación Digital - Barbería El Corte Moderno</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de Transformación Digital - Barbería El Corte Moderno</title>
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Plan de Transformación Digital</h1>
-    <p class="fecha">Barbería El Corte Moderno</p>
-    <button id="menu-toggle" aria-label="Abrir menú">
-      ☰
-    </button>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">PTD - El Corte Moderno</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link active" onclick="showSection('portada')">Inicio</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link active" onclick="showSection('indice')">Indice</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="showSection('introduccion')">Introducción</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="showSection('diagnostico')">Diagnóstico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="showSection('experiencia')">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="showSection('habilitando')">Habilitando</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="showSection('gestion')">Gestión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" onclick="showSection('sectores')">Sectores</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-    <nav id="navbar" aria-label="Menú de navegación principal">
-  <a href="#portada">Inicio</a>
-  <ul class="menu-principal">
-    <li>
-      <a href="#indice" aria-haspopup="true" aria-expanded="false">Introducción al Plan de Transformación Digital</a>
-      <ul>
-        <li>
-          <a href="#diagnostico">1. Diagnóstico y Reflexión Estratégica</a>
-          <!-- <ul>
-            <li><a href="#analisis-interno">Análisis interno</a></li>
-            <li><a href="#analisis-externo">Análisis externo</a></li>
-            <li><a href="#areas-prioritarias">Áreas prioritarias</a></li>
-          </ul> -->
-        </li>
-        <li>
-          <a href="#experiencia">2. Transformando la experiencia del cliente</a>
-          <!-- <ul>
-            <li><a href="#buyerpersona">Buyer persona</a></li>
-            <li><a href="#empatia">Mapa de empatía</a></li>
-            <li><a href="#journey">Mapa de experiencia</a></li>
-            <li><a href="#modelo-negocio">Modelo de negocio</a></li>
-          </ul> -->
-        </li>
-        <li>
-          <a href="#habilitando">3. Habilitando la Transformación</a>
-          <!-- <ul>
-            <li><a href="#lienzo-transformacion">Lienzo de transformación</a></li>
-            <li><a href="#tecnologias">Tecnologías y herramientas</a></li>
-            <li><a href="#priorizacion">Priorización digital</a></li>
-          </ul> -->
-        </li>
-        <li>
-          <a href="#gestionando">4. Gestionando el Cambio</a>
-          <!-- <ul>
-            <li><a href="#kpis">Objetivos y KPIs</a></li>
-            <li><a href="#plan-accion">Plan de acción</a></li>
-            <li><a href="#equipo">Equipo líder del cambio</a></li>
-            <li><a href="#formacion">Análisis de formación</a></li>
-            <li><a href="#cronograma">Cronograma</a></li>
-            <li><a href="#presupuesto">Presupuesto e inversión</a></li>
-          </ul> -->
-        </li>
-        <li>
-          <a href="#sectores">5. Sectores de Aplicación</a>
-          <!-- <ul>
-            <li><a href="#citas-online">Citas y reservas online</a></li>
-            <li><a href="#experiencia-digital">Experiencia digital del cliente</a></li>
-            <li><a href="#marketing">Marketing y redes sociales</a></li>
-            <li><a href="#reputacion">Presencia online y reputación</a></li>
-          </ul> -->
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-content">
+        <!-- PORTADA -->
+        <section id="portada" class="portada loading">
+            <h1>PLAN DE TRANSFORMACIÓN DIGITAL</h1>
+            <div class="company-name">Barbería El Corte Moderno</div>
+            <div class="date-location">Madrid, 18 de mayo de 2025</div>
+            
+        </section>
 
-  </header>
+        <!-- SECCIÓN : INDICE -->
+        <section id="indice" class="section">
+            <h2>Contenido</h2>
+            
+            <div>
+                <ol style="margin-left: 15px;">
+                <li><strong>Introducción al Plan de transformación Digital.</strong></li>
+                
+                    <li><strong>Diagnóstico y Reflexión Estratégica</strong></li>
+                
+                <ul>
+                    <li>Análisis interno de la situación digital actual</li>
+                    <li>Análisis externo de sector de barberías y competencia</li>
+                    <li>Definición inicial de áreas de actuación prioritarias</li>
+                </ul>
+                
+            
+                
+                <li><strong>Transformando la experiencia del cliente</strong></li>
+                
+                <ul>
+                    <li>Perfil del cliente ideal (buyerpersona)</li>
+                    <li>Mapa de empatía del cliente</li>
+                    <li>Mapa de experiencia del cliente (customerjourneymap)</li>
+                    <li>Lienzo del modelo de negocio</li>
+                </ul>
+                
+                    <li><strong>Habilitando la Transformación</strong></li>
+                
+                <ul>
+                    <li>Lienzo de transformación digital</li>
+                    <li>Tecnologías y herramientas a implementar</li>
+                    <li>Priorización de soluciones digitales</li>
+                </ul>
+                
+            
+                
+                <li><strong>Gestionando el Cambio</strong></li>
+                
+                <ul>
+                    <li>Objetivos específicos y KPIspara la barbería</li>
+                    <li>Plan de acción con iniciativas priorizadas</li>
+                    <li>Constitución del equipo líder del cambio</li>
+                    <li>Análisis de formación necesaria</li>
+                    <li>Cronograma de implementación</li>
+                    <li>Presupuesto e inversión requerida</li>
+                </ul>
 
-  <main>
-    <section id="portada" class="section">
-      <p><strong>PLAN DE TRANSFORMACIÓN DIGITAL</strong></p>
-      <p>NOMBRE DE LA EMPRESA: Barbería El Corte Moderno</p>
-      <p>Madrid, 18 de mayo de 2025</p>
-    </section>
+                <li><strong>Sectores de Aplicación Específicos para Barberías</strong></li>
+                
+                <ul>
+                    <li>Gestión de citas y reservas online</li>
+                    <li>Experiencia digital del cliente</li>
+                    <li>Marketing digital y redes sociales</li>
+                    <li>Presencia online y reputación digital</li>
+                </ul>
+                </ol>
+            </div>
+        </section>
 
-    <section id="indice" class="section">
-  <h2>Introducción al Plan de Transformación Digital</h2>
-  <div class="two-columns">
-    <ol>
-      <li>Diagnóstico y Reflexión Estratégica
-        <ul>
-          <li>Análisis interno de la situación digital actual</li>
-          <li>Análisis externo del sector de barberías y competencia</li>
-          <li>Definición inicial de áreas de actuación prioritarias</li>
-        </ul>
-      </li>
-      <li>Transformando la experiencia del cliente
-        <ul>
-          <li>Perfil del cliente ideal (buyer persona)</li>
-          <li>Mapa de empatía del cliente</li>
-          <li>Mapa de experiencia del cliente (customer journey map)</li>
-          <li>Lienzo del modelo de negocio</li>
-        </ul>
-      </li>
-      <li>Habilitando la Transformación
-        <ul>
-          <li>Lienzo de transformación digital</li>
-          <li>Tecnologías y herramientas a implementar</li>
-          <li>Priorización de soluciones digitales</li>
-        </ul>
-      </li>
-    </ol>
+        <!-- SECCIÓN 1: INTRODUCCIÓN -->
+        <section id="introduccion" class="section">
+            <h2>1. Introducción al Plan de Transformación Digital</h2>
+            
+            <div>
+                <h3>Visión del Proyecto</h3>
+                <p>La Barbería El Corte Moderno inicia su proceso de transformación digital con el objetivo de modernizar sus operaciones, mejorar la experiencia del cliente y optimizar sus procesos de negocio mediante la implementación estratégica de tecnologías digitales.</p>
+            </div>
+        </section>
 
-    <ol start="4">
-      <li>Gestionando el Cambio
-        <ul>
-          <li>Objetivos específicos y KPIs para la barbería</li>
-          <li>Plan de acción con iniciativas priorizadas</li>
-          <li>Constitución del equipo líder del cambio</li>
-          <li>Análisis de formación necesaria</li>
-          <li>Cronograma de implementación</li>
-          <li>Presupuesto e inversión requerida</li>
-        </ul>
-      </li>
-      <li>Sectores de Aplicación Específicos para Barberías
-        <ul>
-          <li>Gestión de citas y reservas online</li>
-          <li>Experiencia digital del cliente</li>
-          <li>Marketing digital y redes sociales</li>
-          <li>Presencia online y reputación digital</li>
-        </ul>
-      </li>
-    </ol>
-  </div>
-</section>
+        <!-- SECCIÓN 2: DIAGNÓSTICO -->
+        <section id="diagnostico" class="section">
+            <h2>2. Diagnóstico y Reflexión Estratégica</h2>
+            
+            <div class="grid-2">
+                <div class="grid-item">
+                    <h3>📊 Análisis Interno</h3>
+                    <p><strong>Situación Digital Actual:</strong> Evaluación exhaustiva del nivel de digitalización actual de la barbería, identificando fortalezas, debilidades y oportunidades de mejora en sistemas, procesos y herramientas digitales existentes.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>🌐 Análisis Externo</h3>
+                    <p><strong>Sector y Competencia:</strong> Análisis detallado del panorama competitivo en el sector de barberías, identificando tendencias digitales emergentes y mejores prácticas del mercado que pueden ser adaptadas.</p>
+                </div>
+            </div>
 
+            <h3>🎯 Áreas de Actuación Prioritarias</h3>
+            <div>
+                <ul>
+                    <li><strong></strong> </li>
+                    <li><strong></strong> </li>
+                    <li><strong></strong> </li>
+                </ul>
+            </div>
 
-    <!-- Aquí puedes agregar más contenido detallado para cada sección -->
+            
+        </section>
 
-    <section id="diagnostico" class="section">
-      <h2>Diagnóstico y Reflexión Estratégica</h2>
-      <ul>
-        <li>Análisis interno de la situación digital actual</li>
-        <li>Análisis externo del sector de barberías y competencia</li>
-        <li>Definición inicial de áreas de actuación prioritarias</li>
-      </ul>
-      <p>Contenido detallado sobre el diagnóstico...</p>
-    </section>
+        <!-- SECCIÓN 3: EXPERIENCIA CLIENTE -->
+        <section id="experiencia" class="section">
+            <h2>3. Transformando la Experiencia del Cliente</h2>
+            
+            <div class="grid-2">
+                <div class="grid-item">
+                    <h3>👤 Buyer Persona</h3>
+                    <p><li></li></p>
+                </div>
+                <div class="grid-item">
+                    <h3>💭 Mapa de Empatía</h3>
+                    <p><li></li></p>
+                </div>
+            </div>
 
-    <section id="experiencia" class="section">
-      <h2>Transformando la experiencia del cliente</h2>
-      <ul>
-        <li>Perfil del cliente ideal (buyer persona)</li>
-        <li>Mapa de empatía del cliente</li>
-        <li>Mapa de experiencia del cliente (customer journey map)</li>
-        <li>Lienzo del modelo de negocio</li>
-      </ul>
-      <p>Contenido relacionado con la experiencia del cliente...</p>
-    </section>
+            <h3>🗺️ Customer Journey Map</h3>
+            <div>
+                <h3>Fases del Recorrido del Cliente</h3>
+                <ul>
+                    <li><strong></strong> </li>
+                </ul>
+            </div>
 
-    <section id="habilitando" class="section">
-      <h2>Habilitando la Transformación</h2>
-      <ul>
-        <li>Lienzo de transformación digital</li>
-        <li>Tecnologías y herramientas a implementar</li>
-        <li>Priorización de soluciones digitales</li>
-      </ul>
-      <p>Detalles sobre tecnologías y estrategias digitales...</p>
-    </section>
+            <h3>🏢 Lienzo del Modelo de Negocio</h3>
+            <p><li></li>.</p>
+        </section>
 
-    <section id="gestionando" class="section">
-      <h2>Gestionando el Cambio</h2>
-      <ul>
-        <li>Objetivos específicos y KPIs para la barbería</li>
-        <li>Plan de acción con iniciativas priorizadas</li>
-        <li>Constitución del equipo líder del cambio</li>
-        <li>Análisis de formación necesaria</li>
-        <li>Cronograma de implementación</li>
-        <li>Presupuesto e inversión requerida</li>
-      </ul>
-      <p>Planificación y gestión del cambio...</p>
-    </section>
+        <!-- SECCIÓN 4: HABILITANDO -->
+        <section id="habilitando" class="section">
+            <h2>4. Habilitando la Transformación</h2>
+            
+            <div>
+                <h3>🚀 Lienzo de Transformación Digital</h3>
+                <p><li></li></p>
+            </div>
 
-    <section id="sectores" class="section">
-      <h2>Sectores de Aplicación Específicos para Barberías</h2>
-      <ul>
-        <li>Gestión de citas y reservas online</li>
-        <li>Experiencia digital del cliente</li>
-        <li>Marketing digital y redes sociales</li>
-        <li>Presencia online y reputación digital</li>
-      </ul>
-      <p>Aplicación de soluciones digitales específicas...</p>
-    </section>
-  </main>
+            <h3>💻 Tecnologías y Herramientas a Implementar</h3>
+            <div class="grid-2">
+                <div class="grid-item">
+                    <h3><li></li></h3>
+                </div>
+                <div class="grid-item">
+                    <h3><li></li></h3>
+                </div>
+            </div>
 
-  <button id="btnTop" title="Volver arriba" aria-label="Volver arriba">⬆️</button>
+            <h3>📊 Priorización de Soluciones Digitales</h3>
+            
+            <ul>
+                <li><strong></strong></li>
+            </ul>
+        </section>
 
-  <footer>
-    <p>&copy; 2025 Barbería El Corte Moderno</p>
-  </footer>
+        <!-- SECCIÓN 5: GESTIÓN -->
+        <section id="gestion" class="section">
+            <h2>5. Gestionando el Cambio</h2>
+            
+            <div>
+                <h3>🎯 Objetivos Específicos y KPIs</h3>
+                <p>..</p>
+            </div>
 
-  <script>
-  // Scroll suave para todos los enlaces de navegación
-  document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetID = this.getAttribute('href').substring(1);
-      const targetSection = document.getElementById(targetID);
-      if(targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    });
-  });
+            <div class="grid-2">
+                <div class="grid-item">
+                    <h3>📈 KPIs Operativos</h3>
+                    <ul>
+                        <li>Tasa de ocupación de citas</li>
+                        <li>Tiempo promedio de espera</li>
+                        <li>Eficiencia en gestión de inventario</li>
+                        <li>Automatización de procesos administrativos</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3>💰 KPIs de Negocio</h3>
+                    <ul>
+                        <li>Crecimiento de ingresos digitales</li>
+                        <li>Retención y fidelización de clientes</li>
+                        <li>Costo de adquisición de clientes (CAC)</li>
+                        <li>Valor de vida del cliente (CLV)</li>
+                    </ul>
+                </div>
+            </div>
 
-  // Scrollspy: resaltar enlace activo según sección visible
-  const sections = document.querySelectorAll('main section');
-  const navLinks = document.querySelectorAll('#navbar a');
+            <h3>🗓️ Plan de Acción con Iniciativas Priorizadas</h3>
+            <p>...</p>
 
-  window.addEventListener('scroll', () => {
-    let scrollPos = window.scrollY + 260; // Ajusta según tu header sticky
-    let currentSectionId = '';
+            <h3>👥 Constitución del equipo líder del cambio</h3>
+            <div>
+                <ul>
+                    <li>..</li>
+                </ul>
+            </div>
 
-    sections.forEach(section => {
-      if (scrollPos >= section.offsetTop) {
-        currentSectionId = section.id;
-      }
-    });
+            <h3>📚 Análisis de Formación Necesaria</h3>
+            <p>..</p>
 
-    // Primero removemos todas las clases active
-    navLinks.forEach(link => link.classList.remove('active'));
+            <h3>⏰ Cronograma de Implementación</h3>
+            <p>..</p>
 
-    if (currentSectionId === 'portada') {
-      // Si estás en portada, activamos Inicio
-      const inicioLink = document.querySelector('#navbar > a[href="#portada"]');
-      if (inicioLink) inicioLink.classList.add('active');
-    } else if (currentSectionId) {
-      // Activamos el enlace de la sección actual
-      const currentLink = document.querySelector(`#navbar a[href="#${currentSectionId}"]`);
-      if (currentLink) currentLink.classList.add('active');
+            <h3>💵 Presupuesto e Inversión Requerida</h3>
+            <p>...</p>
+        </section>
 
-      // Si la sección está dentro del índice, activamos también el enlace Índice
-      const indiceLink = document.querySelector('#navbar > ul > li > a[href="#indice"]');
-      // Comprobamos si la sección actual está dentro de alguna subsección del índice
-      const indiceSections = [
-        'indice', 'introduccion', 'diagnostico', 'analisis-interno', 'analisis-externo', 'areas-prioritarias',
-        'experiencia', 'buyerpersona', 'empatia', 'journey', 'modelo-negocio',
-        'habilitando', 'lienzo-transformacion', 'tecnologias', 'priorizacion',
-        'gestionando', 'kpis', 'plan-accion', 'equipo', 'formacion', 'cronograma', 'presupuesto',
-        'sectores', 'citas-online', 'experiencia-digital', 'marketing', 'reputacion'
-      ];
+        <!-- SECCIÓN 6: SECTORES -->
+        <section id="sectores" class="section">
+            <h2>6. Sectores de Aplicación Específicos para Barberías</h2>
+            
+            <div class="grid-2">
+                <div class="grid-item">
+                    <h3>📅 Gestión de Citas y Reservas Online</h3>
+                    <p>Sistema automatizado integral que incluye calendario online sincronizado, confirmaciones automáticas vía SMS/email, recordatorios personalizados, gestión de cancelaciones y reprogramaciones, y analytics de patrones de reserva.</p>
+                </div>
+                <div class="grid-item">
+                    <h3>✨ Experiencia Digital del Cliente</h3>
+                    <p>Optimización de todos los touchpoints digitales: desde el primer contacto online hasta el seguimiento post-servicio, incluyendo onboarding digital, personalización de servicios y programa de fidelización gamificado.</p>
+                </div>
+            </div>
 
-      if (indiceSections.includes(currentSectionId) && indiceLink) {
-        indiceLink.classList.add('active');
-      }
-    }
-  });
+            <h3>📱 Marketing Digital y Redes Sociales</h3>
+            <div>
+                <h3>Estrategia de Contenidos Multi-canal</h3>
+                <ul>
+                    <li><strong>Instagram:</strong> Contenido visual de trabajos realizados, behind-the-scenes, stories interactivos</li>
+                    <li><strong>Facebook:</strong> Promociones, eventos, interacción con la comunidad local</li>
+                    <li><strong>TikTok:</strong> Videos cortos de técnicas, transformaciones, tendencias</li>
+                    <li><strong>Google My Business:</strong> Optimización para búsquedas locales y reseñas</li>
+                </ul>
+            </div>
 
-  // Mostrar u ocultar botón "volver arriba"
-  const btnTop = document.getElementById('btnTop');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 400) {
-      btnTop.style.display = 'block';
-    } else {
-      btnTop.style.display = 'none';
-    }
-  });
+            <h3>Campañas de Marketing Automatizado</h3>
+            <ul>
+                <li><strong>Email Marketing:</strong> Newsletters mensuales con tips de cuidado, promociones personalizadas</li>
+                <li><strong>SMS Marketing:</strong> Recordatorios de citas, ofertas flash, cumpleaños de clientes</li>
+                <li><strong>Publicidad Digital:</strong> Campañas de Facebook/Instagram Ads segmentadas geográficamente</li>
+                <li><strong>Retargeting:</strong> Recuperación de clientes que visitaron la web sin reservar</li>
+            </ul>
 
-  // Botón para volver arriba
-  btnTop.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+            <h3>🌐 Presencia Online y Reputación Digital</h3>
+            <div class="grid-2">
+                <div class="grid-item">
+                    <h3>Desarrollo Web Optimizado</h3>
+                    <ul>
+                        <li>Sitio web responsive y rápido</li>
+                        <li>SEO local optimizado</li>
+                        <li>Integración con sistema de reservas</li>
+                        <li>Galería de trabajos realizados</li>
+                    </ul>
+                </div>
+                <div class="grid-item">
+                    <h3>Gestión de Reputación</h3>
+                    <ul>
+                        <li>Monitoreo de menciones online</li>
+                        <li>Estrategia de respuesta a reseñas</li>
+                        <li>Programa de incentivos para reseñas</li>
+                    </ul>
+                </div>
+            </div>
 
-  // Animación fade-in al hacer scroll
-  const faders = document.querySelectorAll('.section');
-  const appearOptions = {
-    threshold: 0.2,
-    rootMargin: "0px 0px -50px 0px"
-  };
+            <div>
+                <h3>🚀 Beneficios Esperados de la Implementación</h3>
+                <p>La implementación integral de estas soluciones digitales específicamente adaptadas para barberías permitirá:</p>
+                <ul>
+                    <li><strong>Aumento del 30-40%</strong> en la eficiencia operativa</li>
+                    <li><strong>Mejora del 50%</strong> en la satisfacción del cliente</li>
+                    <li><strong>Crecimiento del 25%</strong> en el número de clientes nuevos</li>
+                    <li><strong>Incremento del 35%</strong> en la fidelización de clientes existentes</li>
+                    <li><strong>Reducción del 60%</strong> en tareas administrativas manuales</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-  const appearOnScroll = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('appear');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, appearOptions);
+    <script>
+        // Variables globales
+        let currentSection = 'portada';
 
-  faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-  });
+        // Función para mostrar secciones
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            const sections = document.querySelectorAll('#portada, .section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+                section.style.display = 'none';
+            });
 
-  //menu-movil
-   const toggleBtn = document.getElementById("menu-toggle");
-  const navbar = document.getElementById("navbar");
+            // Mostrar la sección seleccionada
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.style.display = 'block';
+                setTimeout(() => {
+                    targetSection.classList.add('active');
+                }, 10);
+            }
 
-  toggleBtn.addEventListener("click", () => {
-    navbar.classList.toggle("active");
-  });
+            // Actualizar navegación activa
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
+            
+            event.target.classList.add('active');
+            currentSection = sectionId;
 
-  // Cerrar menú al hacer clic en cualquier enlace (solo en móvil)
-  navbar.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    if (navbar.classList.contains('active')) {
-      if (link.getAttribute('href') === '#indice') {
-        // Cierra el menú después de 2 segundos solo para #indice
-        setTimeout(() => {
-          navbar.classList.remove('active');
-        }, 2000);
-      } else {
-        // Cierra el menú inmediatamente para otros enlaces
-        navbar.classList.remove('active');
-      }
-    }
-  });
-});
-</script>
+            // Cerrar menú móvil si está abierto
+            const navMenu = document.getElementById('nav-menu');
+            const hamburger = document.getElementById('hamburger');
+            navMenu.classList.remove('active');
+            hamburger.classList.remove('active');
 
+            // Scroll suave al inicio
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Función para toggle del menú hamburguesa
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            const hamburger = document.getElementById('hamburger');
+            
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+
+        // Cerrar menú móvil al hacer clic fuera
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('nav-menu');
+            const hamburger = document.getElementById('hamburger');
+            const navbar = document.querySelector('.navbar');
+            
+            if (!navbar.contains(event.target)) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        });
+
+        // Animación de carga inicial
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                const portada = document.getElementById('portada');
+                portada.classList.add('loaded');
+            }, 200);
+        });
+
+        // Efecto parallax suave en scroll
+        window.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const rate = scrolled * -0.5;
+            
+            if (currentSection === 'portada') {
+                const portada = document.getElementById('portada');
+                if (portada && scrolled < window.innerHeight) {
+                    portada.style.transform = `translateY(${rate}px)`;
+                }
+            }
+        });
+
+        // Inicialización
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mostrar portada por defecto
+            showSection('portada');
+            
+            // Precargar todas las secciones para transiciones suaves
+            const allSections = document.querySelectorAll('.section');
+            allSections.forEach(section => {
+                section.classList.add('loading');
+            });
+        });
+
+        // Manejo de teclas para navegación
+        document.addEventListener('keydown', function(event) {
+            const sections = ['portada', 'introduccion', 'diagnostico', 'experiencia', 'habilitando', 'gestion', 'sectores'];
+            const currentIndex = sections.indexOf(currentSection);
+            
+            if (event.key === 'ArrowRight' && currentIndex < sections.length - 1) {
+                const nextSection = sections[currentIndex + 1];
+                const nextLink = document.querySelector(`[onclick="showSection('${nextSection}')"]`);
+                if (nextLink) nextLink.click();
+            } else if (event.key === 'ArrowLeft' && currentIndex > 0) {
+                const prevSection = sections[currentIndex - 1];
+                const prevLink = document.querySelector(`[onclick="showSection('${prevSection}')"]`);
+                if (prevLink) prevLink.click();
+            }
+        });
+    </script>
 </body>
 </html>
