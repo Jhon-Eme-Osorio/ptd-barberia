@@ -419,7 +419,7 @@
 
         // Manejo de teclas para navegación
         document.addEventListener('keydown', function(event) {
-            const sections = ['portada', 'introduccion', 'diagnostico', 'experiencia', 'habilitando', 'gestion', 'sectores'];
+            const sections = ['portada', "indice", 'introduccion', 'diagnostico', 'experiencia', 'habilitando', 'gestion', 'sectores'];
             const currentIndex = sections.indexOf(currentSection);
             
             if (event.key === 'ArrowRight' && currentIndex < sections.length - 1) {
