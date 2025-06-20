@@ -1,437 +1,783 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plan de Transformación Digital - Barbería El Corte Moderno</title>
     <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+  </head>
+  <body>
     <!-- NAVEGACIÓN -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">PTD - El Corte Moderno</div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a class="nav-link active" onclick="showSection('portada')">Inicio</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link active" onclick="showSection('indice')">Indice</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="showSection('introduccion')">Introducción</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="showSection('diagnostico')">Diagnóstico</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="showSection('experiencia')">Experiencia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="showSection('habilitando')">Habilitando</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="showSection('gestion')">Gestión</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" onclick="showSection('sectores')">Sectores</a>
-                </li>
-            </ul>
-            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">PTD - El Corte Moderno</div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link active" onclick="showSection('portada')"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" onclick="showSection('indice')"
+              >Indice</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="showSection('introduccion')"
+              >Introducción</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="showSection('diagnostico')"
+              >Diagnóstico</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="showSection('experiencia')"
+              >Experiencia</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="showSection('habilitando')"
+              >Habilitando</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="showSection('gestion')">Gestión</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="showSection('sectores')">Sectores</a>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+      </div>
     </nav>
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="main-content">
-        <!-- PORTADA -->
-        <section id="portada" class="portada loading">
-            <h1>PLAN DE TRANSFORMACIÓN DIGITAL</h1>
-            <div class="company-name">Barbería El Corte Moderno</div>
-            <div class="date-location">Madrid, 18 de mayo de 2025</div>
-            
-        </section>
+      <!-- PORTADA -->
+      <section id="portada" class="portada loading">
+        <h1>PLAN DE TRANSFORMACIÓN DIGITAL</h1>
+        <div class="company-name">Barbería El Corte Moderno</div>
+        <div class="date-location">Madrid, 18 de mayo de 2025</div>
+      </section>
 
-        <!-- SECCIÓN : INDICE -->
-        <section id="indice" class="section">
-            <h2>Contenido</h2>
-            
-            <div>
-                <ol style="margin-left: 15px;">
-                <li><strong>Introducción al Plan de transformación Digital.</strong></li>
-                
-                    <li><strong>Diagnóstico y Reflexión Estratégica</strong></li>
-                
-                <ul>
-                    <li>Análisis interno de la situación digital actual</li>
-                    <li>Análisis externo de sector de barberías y competencia</li>
-                    <li>Definición inicial de áreas de actuación prioritarias</li>
-                </ul>
-                
-            
-                
-                <li><strong>Transformando la experiencia del cliente</strong></li>
-                
-                <ul>
-                    <li>Perfil del cliente ideal (buyerpersona)</li>
-                    <li>Mapa de empatía del cliente</li>
-                    <li>Mapa de experiencia del cliente (customerjourneymap)</li>
-                    <li>Lienzo del modelo de negocio</li>
-                </ul>
-                
-                    <li><strong>Habilitando la Transformación</strong></li>
-                
-                <ul>
-                    <li>Lienzo de transformación digital</li>
-                    <li>Tecnologías y herramientas a implementar</li>
-                    <li>Priorización de soluciones digitales</li>
-                </ul>
-                
-            
-                
-                <li><strong>Gestionando el Cambio</strong></li>
-                
-                <ul>
-                    <li>Objetivos específicos y KPIspara la barbería</li>
-                    <li>Plan de acción con iniciativas priorizadas</li>
-                    <li>Constitución del equipo líder del cambio</li>
-                    <li>Análisis de formación necesaria</li>
-                    <li>Cronograma de implementación</li>
-                    <li>Presupuesto e inversión requerida</li>
-                </ul>
+      <!-- SECCIÓN : INDICE -->
+      <section id="indice" class="section">
+        <h2>Contenido</h2>
 
-                <li><strong>Sectores de Aplicación Específicos para Barberías</strong></li>
-                
-                <ul>
-                    <li>Gestión de citas y reservas online</li>
-                    <li>Experiencia digital del cliente</li>
-                    <li>Marketing digital y redes sociales</li>
-                    <li>Presencia online y reputación digital</li>
-                </ul>
-                </ol>
-            </div>
-        </section>
+        <div>
+          <ol style="margin-left: 15px">
+            <li>
+              <strong>Introducción al Plan de transformación Digital.</strong>
+            </li>
 
-        <!-- SECCIÓN 1: INTRODUCCIÓN -->
-        <section id="introduccion" class="section">
-            <h2>1. Introducción al Plan de Transformación Digital</h2>
-            
-            <div>
-                <h3>Visión del Proyecto</h3>
-                <p>La Barbería El Corte Moderno inicia su proceso de transformación digital con el objetivo de modernizar sus operaciones, mejorar la experiencia del cliente y optimizar sus procesos de negocio mediante la implementación estratégica de tecnologías digitales.</p>
-            </div>
-        </section>
+            <li><strong>Diagnóstico y Reflexión Estratégica</strong></li>
 
-        <!-- SECCIÓN 2: DIAGNÓSTICO -->
-        <section id="diagnostico" class="section">
-            <h2>2. Diagnóstico y Reflexión Estratégica</h2>
-            
-            <div class="grid-2">
-                <div class="grid-item">
-                    <h3>📊 Análisis Interno</h3>
-                    <p><strong>Situación Digital Actual:</strong> Evaluación exhaustiva del nivel de digitalización actual de la barbería, identificando fortalezas, debilidades y oportunidades de mejora en sistemas, procesos y herramientas digitales existentes.</p>
-                </div>
-                <div class="grid-item">
-                    <h3>🌐 Análisis Externo</h3>
-                    <p><strong>Sector y Competencia:</strong> Análisis detallado del panorama competitivo en el sector de barberías, identificando tendencias digitales emergentes y mejores prácticas del mercado que pueden ser adaptadas.</p>
-                </div>
-            </div>
-
-            <h3>🎯 Áreas de Actuación Prioritarias</h3>
-            <div>
-                <ul>
-                    <li><strong></strong> </li>
-                    <li><strong></strong> </li>
-                    <li><strong></strong> </li>
-                </ul>
-            </div>
-
-            
-        </section>
-
-        <!-- SECCIÓN 3: EXPERIENCIA CLIENTE -->
-        <section id="experiencia" class="section">
-            <h2>3. Transformando la Experiencia del Cliente</h2>
-            
-            <div class="grid-2">
-                <div class="grid-item">
-                    <h3>👤 Buyer Persona</h3>
-                    <p><li></li></p>
-                </div>
-                <div class="grid-item">
-                    <h3>💭 Mapa de Empatía</h3>
-                    <p><li></li></p>
-                </div>
-            </div>
-
-            <h3>🗺️ Customer Journey Map</h3>
-            <div>
-                <h3>Fases del Recorrido del Cliente</h3>
-                <ul>
-                    <li><strong></strong> </li>
-                </ul>
-            </div>
-
-            <h3>🏢 Lienzo del Modelo de Negocio</h3>
-            <p><li></li>.</p>
-        </section>
-
-        <!-- SECCIÓN 4: HABILITANDO -->
-        <section id="habilitando" class="section">
-            <h2>4. Habilitando la Transformación</h2>
-            
-            <div>
-                <h3>🚀 Lienzo de Transformación Digital</h3>
-                <p><li></li></p>
-            </div>
-
-            <h3>💻 Tecnologías y Herramientas a Implementar</h3>
-            <div class="grid-2">
-                <div class="grid-item">
-                    <h3><li></li></h3>
-                </div>
-                <div class="grid-item">
-                    <h3><li></li></h3>
-                </div>
-            </div>
-
-            <h3>📊 Priorización de Soluciones Digitales</h3>
-            
             <ul>
-                <li><strong></strong></li>
-            </ul>
-        </section>
-
-        <!-- SECCIÓN 5: GESTIÓN -->
-        <section id="gestion" class="section">
-            <h2>5. Gestionando el Cambio</h2>
-            
-            <div>
-                <h3>🎯 Objetivos Específicos y KPIs</h3>
-                <p>..</p>
-            </div>
-
-            <div class="grid-2">
-                <div class="grid-item">
-                    <h3>📈 KPIs Operativos</h3>
-                    <ul>
-                        <li>Tasa de ocupación de citas</li>
-                        <li>Tiempo promedio de espera</li>
-                        <li>Eficiencia en gestión de inventario</li>
-                        <li>Automatización de procesos administrativos</li>
-                    </ul>
-                </div>
-                <div class="grid-item">
-                    <h3>💰 KPIs de Negocio</h3>
-                    <ul>
-                        <li>Crecimiento de ingresos digitales</li>
-                        <li>Retención y fidelización de clientes</li>
-                        <li>Costo de adquisición de clientes (CAC)</li>
-                        <li>Valor de vida del cliente (CLV)</li>
-                    </ul>
-                </div>
-            </div>
-
-            <h3>🗓️ Plan de Acción con Iniciativas Priorizadas</h3>
-            <p>...</p>
-
-            <h3>👥 Constitución del equipo líder del cambio</h3>
-            <div>
-                <ul>
-                    <li>..</li>
-                </ul>
-            </div>
-
-            <h3>📚 Análisis de Formación Necesaria</h3>
-            <p>..</p>
-
-            <h3>⏰ Cronograma de Implementación</h3>
-            <p>..</p>
-
-            <h3>💵 Presupuesto e Inversión Requerida</h3>
-            <p>...</p>
-        </section>
-
-        <!-- SECCIÓN 6: SECTORES -->
-        <section id="sectores" class="section">
-            <h2>6. Sectores de Aplicación Específicos para Barberías</h2>
-            
-            <div class="grid-2">
-                <div class="grid-item">
-                    <h3>📅 Gestión de Citas y Reservas Online</h3>
-                    <p>Sistema automatizado integral que incluye calendario online sincronizado, confirmaciones automáticas vía SMS/email, recordatorios personalizados, gestión de cancelaciones y reprogramaciones, y analytics de patrones de reserva.</p>
-                </div>
-                <div class="grid-item">
-                    <h3>✨ Experiencia Digital del Cliente</h3>
-                    <p>Optimización de todos los touchpoints digitales: desde el primer contacto online hasta el seguimiento post-servicio, incluyendo onboarding digital, personalización de servicios y programa de fidelización gamificado.</p>
-                </div>
-            </div>
-
-            <h3>📱 Marketing Digital y Redes Sociales</h3>
-            <div>
-                <h3>Estrategia de Contenidos Multi-canal</h3>
-                <ul>
-                    <li><strong>Instagram:</strong> Contenido visual de trabajos realizados, behind-the-scenes, stories interactivos</li>
-                    <li><strong>Facebook:</strong> Promociones, eventos, interacción con la comunidad local</li>
-                    <li><strong>TikTok:</strong> Videos cortos de técnicas, transformaciones, tendencias</li>
-                    <li><strong>Google My Business:</strong> Optimización para búsquedas locales y reseñas</li>
-                </ul>
-            </div>
-
-            <h3>Campañas de Marketing Automatizado</h3>
-            <ul>
-                <li><strong>Email Marketing:</strong> Newsletters mensuales con tips de cuidado, promociones personalizadas</li>
-                <li><strong>SMS Marketing:</strong> Recordatorios de citas, ofertas flash, cumpleaños de clientes</li>
-                <li><strong>Publicidad Digital:</strong> Campañas de Facebook/Instagram Ads segmentadas geográficamente</li>
-                <li><strong>Retargeting:</strong> Recuperación de clientes que visitaron la web sin reservar</li>
+              <li>Análisis interno de la situación digital actual</li>
+              <li>Análisis externo de sector de barberías y competencia</li>
+              <li>Definición inicial de áreas de actuación prioritarias</li>
             </ul>
 
-            <h3>🌐 Presencia Online y Reputación Digital</h3>
-            <div class="grid-2">
-                <div class="grid-item">
-                    <h3>Desarrollo Web Optimizado</h3>
-                    <ul>
-                        <li>Sitio web responsive y rápido</li>
-                        <li>SEO local optimizado</li>
-                        <li>Integración con sistema de reservas</li>
-                        <li>Galería de trabajos realizados</li>
-                    </ul>
-                </div>
-                <div class="grid-item">
-                    <h3>Gestión de Reputación</h3>
-                    <ul>
-                        <li>Monitoreo de menciones online</li>
-                        <li>Estrategia de respuesta a reseñas</li>
-                        <li>Programa de incentivos para reseñas</li>
-                    </ul>
-                </div>
-            </div>
+            <li><strong>Transformando la experiencia del cliente</strong></li>
 
-            <div>
-                <h3>🚀 Beneficios Esperados de la Implementación</h3>
-                <p>La implementación integral de estas soluciones digitales específicamente adaptadas para barberías permitirá:</p>
-                <ul>
-                    <li><strong>Aumento del 30-40%</strong> en la eficiencia operativa</li>
-                    <li><strong>Mejora del 50%</strong> en la satisfacción del cliente</li>
-                    <li><strong>Crecimiento del 25%</strong> en el número de clientes nuevos</li>
-                    <li><strong>Incremento del 35%</strong> en la fidelización de clientes existentes</li>
-                    <li><strong>Reducción del 60%</strong> en tareas administrativas manuales</li>
-                </ul>
-            </div>
-        </section>
+            <ul>
+              <li>Perfil del cliente ideal (buyerpersona)</li>
+              <li>Mapa de empatía del cliente</li>
+              <li>Mapa de experiencia del cliente (customerjourneymap)</li>
+              <li>Lienzo del modelo de negocio</li>
+            </ul>
+
+            <li><strong>Habilitando la Transformación</strong></li>
+
+            <ul>
+              <li>Lienzo de transformación digital</li>
+              <li>Tecnologías y herramientas a implementar</li>
+              <li>Priorización de soluciones digitales</li>
+            </ul>
+
+            <li><strong>Gestionando el Cambio</strong></li>
+
+            <ul>
+              <li>Objetivos específicos y KPIspara la barbería</li>
+              <li>Plan de acción con iniciativas priorizadas</li>
+              <li>Constitución del equipo líder del cambio</li>
+              <li>Análisis de formación necesaria</li>
+              <li>Cronograma de implementación</li>
+              <li>Presupuesto e inversión requerida</li>
+            </ul>
+
+            <li>
+              <strong>Sectores de Aplicación Específicos para Barberías</strong>
+            </li>
+
+            <ul>
+              <li>Gestión de citas y reservas online</li>
+              <li>Experiencia digital del cliente</li>
+              <li>Marketing digital y redes sociales</li>
+              <li>Presencia online y reputación digital</li>
+            </ul>
+          </ol>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 1: INTRODUCCIÓN -->
+      <section id="introduccion" class="section">
+        <h2>1. Introducción al Plan de Transformación Digital</h2>
+
+        <div>
+          <p>
+            El presente Plan de Transformación Digital se enmarca en la
+            iniciativa Generación Digital PYMES, financiada por la Unión
+            Europea, cuyo objetivo es acelerar la digitalización de las pequeñas
+            y medianas empresas. Este documento propone un conjunto de acciones
+            que permitirán a la
+            <strong>Barbería El Corte Moderno</strong> modernizar su operativa,
+            mejorar su relación con los clientes y aumentar su competitividad
+            mediante el uso estratégico de herramientas digitales. <br /><strong
+              >El Corte Moderno</strong
+            >
+            es una barbería de estilo urbano que destaca por ofrecer servicios
+            personalizados de corte y arreglo de barba en un ambiente
+            contemporáneo y cercano. Actualmente, su presencia digital se limita
+            a su cuenta de Instagram, donde comparte contenidos visuales sobre
+            su trabajo y estilo. Las reservas se gestionan de manera
+            tradicional, a través de llamadas telefónicas o mensajes de
+            WhatsApp, lo que limita la automatización y escalabilidad del
+            negocio.<br />
+            Este plan pretende servir como hoja de ruta para impulsar la
+            transformación digital del negocio, optimizando procesos internos,
+            mejorando la experiencia del cliente y ampliando su visibilidad
+            online mediante herramientas de gestión, canales digitales y
+            estrategias de marketing más eficaces.
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-item fade-in">
+            <h3>🎯 Misión</h3>
+            <p>
+              Ofrecer experiencias de barbería de alta calidad que combinen
+              tradición y tendencias actuales, en un ambiente moderno,
+              profesional y cercano.
+            </p>
+          </div>
+
+          <div class="value-item fade-in">
+            <h3>🚀 Visión</h3>
+            <p>
+              Ser una barbería de referencia en Madrid por su estilo,
+              innovación, atención personalizada y adaptación al entorno
+              digital.
+            </p>
+          </div>
+
+          <div class="value-item values-list fade-in">
+            <h3>💎 Valores</h3>
+            <ul>
+              <li>Profesionalidad y excelencia en el servicio</li>
+              <li>Innovación y adaptación a las tendencias</li>
+              <li>Cercanía y confianza con el cliente</li>
+              <li>Pasión por el detalle</li>
+              <li>Compromiso con la mejora continua</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="values-grid" style="margin-top: 30px">
+          <div class="value-item fade-in">
+            <h3>💼 ¿Qué hacemos?</h3>
+            <p>
+              Brindamos servicios de corte moderno, arreglo y diseño de barba,
+              perfilado, cuidado capilar masculino y asesoría de imagen.
+              Vendemos estilo, autoestima y una experiencia personalizada para
+              cada cliente.
+            </p>
+          </div>
+
+          <div class="value-item fade-in">
+            <h3>🔮 Prospectiva</h3>
+            <p>
+              En un entorno cada vez más digital y competitivo, la barbería debe
+              evolucionar hacia un modelo más automatizado, con mejor gestión de
+              clientes, visibilidad online profesional, análisis de datos y
+              fidelización digital.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 2: DIAGNÓSTICO -->
+      <section id="diagnostico" class="section">
+        <h2>2. Diagnóstico y Reflexión Estratégica</h2>
+
+        <div class="grid-2">
+          <div class="grid-item fade-in">
+            <h3>ANÁLISIS INTERNO –</h3>
+            <img
+              src="./img/autoevaluacion.png"
+              alt="Autoevaluación"
+              class="zoomable-img"
+            />
+          </div>
+          <div class="fade-in">
+            <p>
+              Realizar la autoevaluación de transformación digital a través de
+              Acelera Pyme ha sido una experiencia reveladora para mí y para el
+              proyecto de Barbería El Corte Moderno. Hasta ahora, nos hemos
+              manejado bien con Instagram como único canal de visibilidad y la
+              gestión de reservas por WhatsApp o teléfono. Pero este ejercicio
+              me ha hecho ver que, aunque hemos dado ciertos pasos en la
+              dirección correcta, aún queda mucho camino por recorrer si
+              queremos crecer y profesionalizarnos digitalmente. Según los
+              resultados, nos encontramos en una fase intermedia, lo que me
+              parece acertado.
+            </p>
+          </div>
+        </div>
+        <div class="fade-in">
+          <p>
+            ya tenemos conciencia de la importancia del mundo digital, nos
+            estamos formando, y poco a poco la mentalidad dentro del negocio se
+            está alineando con esta necesidad. Este es un buen punto de partida,
+            pero también es una llamada de atención para no quedarnos
+            estancados. Me sorprendió gratamente ver que hay aspectos en los que
+            estamos más avanzados de lo que pensaba, como la estrategia digital
+            inicial, cierta sensibilización sobre ciberseguridad y el uso básico
+            de canales digitales con clientes y otras entidades. Estas pequeñas
+            bases son valiosas y motivadoras. Sin embargo, también fui muy
+            consciente de nuestras debilidades, especialmente en lo relacionado
+            con la infraestructura tecnológica, automatización de procesos,
+            venta online y herramientas internas de gestión. Uno de los puntos
+            que más me hizo reflexionar fue el tema de los canales de venta y
+            medios de pago digitales. En un sector tan visual y competitivo como
+            el nuestro, depender solo de las redes sociales no es suficiente. Es
+            evidente que necesitamos dar el paso a una página web profesional,
+            ofrecer más formas de pago, y sobre todo, empezar a recopilar y
+            analizar datos de clientes para entender mejor sus necesidades y
+            hábitos
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="grid-item fade-in">
+            <h3>ANÁLISIS INTERNO –</h3>
+            <img
+              src="./img/test-digital.png"
+              alt="test-digital"
+              class="zoomable-img"
+            />
+          </div>
+          <div class="fade-in">
+            <p>
+              Después de realizar el Test de Diagnostico Digital, he podido
+              tener una visión mucho más clara y honesta del punto en el que se
+              encuentra Barbería El Corte Moderno dentro del proceso de
+              transformación digital. Los resultados no me sorprendieron del
+              todo, pero sí me ayudaron a poner nombre y número a varias
+              intuiciones que ya tenía: nuestro nivel de digitalización es bajo.
+              Este diagnóstico se basa en el índice de intensidad digital, que
+              nos coloca en una franja de 4 a 6 puntos. Aunque no es el peor
+              escenario, sí deja claro que tenemos mucho por mejorar para estar
+              al nivel de otras pymes que ya aprovechan todas las ventajas del
+              mundo digital.
+            </p>
+          </div>
+        </div>
+        <div class="fade-in">
+          <p>
+            Para una barbería que solo tiene presencia en Instagram y gestiona
+            citas por WhatsApp o llamadas, es evidente que estamos aún en una
+            etapa bastante básica. en el entorno actual no basta con estar en
+            redes sociales. El test demuestra que muchas pymes ya usan las redes
+            con objetivos claros de marketing, fidelización y ventas. Nosotros
+            usamos Instagram más como una galería de cortes que como una
+            herramienta de negocio. Hay margen para profesionalizar ese canal,
+            medir resultados y mejorar el alcance. Esta autoevaluación me ayudó
+            a entender que la digitalización no es solo una moda o una
+            obligación, sino una oportunidad real para crecer, ser más
+            competitivos y ofrecer un mejor servicio.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="grid-item fade-in">
+            <h3>ANÁLISIS INTERNO –</h3>
+            <img
+              src="./img/ciberseguridad.png"
+              alt="ciberseguridad"
+              class="zoomable-img"
+            />
+          </div>
+          <div class="fade-in">
+            <p>
+              El resultado del test nos situó en un nivel medio de
+              ciberseguridad (entre un 34% y un 66%). Al principio, esto me
+              pareció aceptable, incluso positivo. Sin embargo, al reflexionar
+              más a fondo, entendí que un “nivel medio” no es un punto de
+              llegada, sino más bien un punto de partida. Significa que
+              reconocemos la importancia de la ciberseguridad, pero todavía hay
+              muchas medidas que no hemos adoptado y que podrían marcarnos la
+              diferencia entre estar protegidos o vulnerables. Una de las
+              recomendaciones más claras del informe fue la necesidad de seguir
+              reforzando las acciones de seguridad
+            </p>
+          </div>
+        </div>
+        <div class="fade-in">
+          <p>
+            que ya tenemos, pero también incorporar nuevas medidas adaptadas a
+            nuestras necesidades específicas. Por ejemplo, aunque tenemos
+            contraseñas seguras y usamos herramientas básicas de protección, no
+            contamos con protocolos claros ante un posible ataque, ni tenemos
+            formación interna sobre cómo actuar frente a riesgos digitales. Otro
+            punto clave fue la concienciación del equipo. En una barbería
+            pequeña como la nuestra, muchas veces no se piensa que formar al
+            personal en ciberseguridad sea necesario, pero ahora me doy cuenta
+            de que incluso algo tan simple como abrir un enlace malicioso desde
+            el móvil de trabajo podría suponer un problema serio. La seguridad
+            digital no depende solo de programas y antivirus, también de las
+            personas que los usan. En resumen, esta autoevaluación me sirvió
+            para tomar conciencia real de que la ciberseguridad es tan
+            importante como tener bien afiladas las tijeras o limpio el local.
+          </p>
+        </div>
+
+        <h3>🎯 ANÁLISIS EXTERNO - OTRAS EMPRESAS</h3>
+        <div class="tabla-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Empresa innovadora</th>
+          <th>Modelo de negocio</th>
+          <th>Estrategia digital</th>
+          <th>Productos/Servicios</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Barber Shop La Máquina</td>
+          <td>Barbería urbana en Madrid, atención local, orientada a clientes de todas las edades</td>
+          <td>Plataforma de reservas online vía Booksy, reseñas verificadas, permite elegir profesional y horario</td>
+          <td>Corte clásico, degradado, arreglo de barba, servicios para niños y jubilados</td>
+        </tr>
+        <tr>
+          <td>Los Parceritos Barber Studio</td>
+          <td>Barbería joven y moderna, con atención personalizada y estilo latino.</td>
+          <td>Reservas por Booksy, Instagram activo con reels y publicaciones frecuentes</td>
+          <td>Corte más barba, diseños, cejas, servicio rápido y precios competitivos.</td>
+        </tr>
+        <tr>
+          <td>GrandMaster BarberShop</td>
+          <td>Barbería urbana de estilo moderno, con fuerte identidad visual y clientela joven.</td>
+          <td>Instagram como canal principal de marketing, estética profesional, interacción en redes.</td>
+          <td>Cortes degradados, diseños personalizados, perfilado de barba y estilos urbanos.</td>
+        </tr>
+        <tr>
+          <td>Tijera de Oro</td>
+          <td>Barbería local con enfoque integral en estética masculina, ubicada en Madrid.</td>
+          <td>Reservas online por Booksy, presencia en Instagram con reels, estilos y promociones visuales.</td>
+          <td>Corte clásico y moderno, arreglo de barba, diseño de cejas, alisado brasileño, relajamiento, corte con keratina, platinado, mechas.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid-2"></div>
+  <div class="gallery grid-item">
+  <img src="./img/d.png" alt="Imagen 1" class="zoomable-img" />
+  <img src="./img/a.png" alt="Imagen 2" class="zoomable-img" />
+  <img src="./img/f.png" alt="Imagen 3" class="zoomable-img"/>
+  <img src="./img/o.png" alt="Imagen 4" class="zoomable-img"/>
+</div>
+      </section>
+
+      <!-- SECCIÓN 3: EXPERIENCIA CLIENTE -->
+      <section id="experiencia" class="section">
+        <h2>3. Transformando la Experiencia del Cliente</h2>
+
+        <div class="grid-2">
+          <div class="grid-item">
+            <h3>👤 Buyer Persona</h3>
+            <p><li></li></p>
+          </div>
+          <div class="grid-item">
+            <h3>💭 Mapa de Empatía</h3>
+            <p><li></li></p>
+          </div>
+        </div>
+
+        <h3>🗺️ Customer Journey Map</h3>
+        <div>
+          <h3>Fases del Recorrido del Cliente</h3>
+          <ul>
+            <li><strong></strong></li>
+          </ul>
+        </div>
+
+        <h3>🏢 Lienzo del Modelo de Negocio</h3>
+        <p>
+          <li></li>
+          .
+        </p>
+      </section>
+
+      <!-- SECCIÓN 4: HABILITANDO -->
+      <section id="habilitando" class="section">
+        <h2>4. Habilitando la Transformación</h2>
+
+        <div>
+          <h3>🚀 Lienzo de Transformación Digital</h3>
+          <p><li></li></p>
+        </div>
+
+        <h3>💻 Tecnologías y Herramientas a Implementar</h3>
+        <div class="grid-2">
+          <div class="grid-item">
+            <h3><li></li></h3>
+          </div>
+          <div class="grid-item">
+            <h3><li></li></h3>
+          </div>
+        </div>
+
+        <h3>📊 Priorización de Soluciones Digitales</h3>
+
+        <ul>
+          <li><strong></strong></li>
+        </ul>
+      </section>
+
+      <!-- SECCIÓN 5: GESTIÓN -->
+      <section id="gestion" class="section">
+        <h2>5. Gestionando el Cambio</h2>
+
+        <div>
+          <h3>🎯 Objetivos Específicos y KPIs</h3>
+          <p>..</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="grid-item">
+            <h3>📈 KPIs Operativos</h3>
+            <ul>
+              <li>Tasa de ocupación de citas</li>
+              <li>Tiempo promedio de espera</li>
+              <li>Eficiencia en gestión de inventario</li>
+              <li>Automatización de procesos administrativos</li>
+            </ul>
+          </div>
+          <div class="grid-item">
+            <h3>💰 KPIs de Negocio</h3>
+            <ul>
+              <li>Crecimiento de ingresos digitales</li>
+              <li>Retención y fidelización de clientes</li>
+              <li>Costo de adquisición de clientes (CAC)</li>
+              <li>Valor de vida del cliente (CLV)</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>🗓️ Plan de Acción con Iniciativas Priorizadas</h3>
+        <p>...</p>
+
+        <h3>👥 Constitución del equipo líder del cambio</h3>
+        <div>
+          <ul>
+            <li>..</li>
+          </ul>
+        </div>
+
+        <h3>📚 Análisis de Formación Necesaria</h3>
+        <p>..</p>
+
+        <h3>⏰ Cronograma de Implementación</h3>
+        <p>..</p>
+
+        <h3>💵 Presupuesto e Inversión Requerida</h3>
+        <p>...</p>
+      </section>
+
+      <!-- SECCIÓN 6: SECTORES -->
+      <section id="sectores" class="section">
+        <h2>6. Sectores de Aplicación Específicos para Barberías</h2>
+
+        <div class="grid-2">
+          <div class="grid-item">
+            <h3>📅 Gestión de Citas y Reservas Online</h3>
+            <p>
+              Sistema automatizado integral que incluye calendario online
+              sincronizado, confirmaciones automáticas vía SMS/email,
+              recordatorios personalizados, gestión de cancelaciones y
+              reprogramaciones, y analytics de patrones de reserva.
+            </p>
+          </div>
+          <div class="grid-item">
+            <h3>✨ Experiencia Digital del Cliente</h3>
+            <p>
+              Optimización de todos los touchpoints digitales: desde el primer
+              contacto online hasta el seguimiento post-servicio, incluyendo
+              onboarding digital, personalización de servicios y programa de
+              fidelización gamificado.
+            </p>
+          </div>
+        </div>
+
+        <h3>📱 Marketing Digital y Redes Sociales</h3>
+        <div>
+          <h3>Estrategia de Contenidos Multi-canal</h3>
+          <ul>
+            <li>
+              <strong>Instagram:</strong> Contenido visual de trabajos
+              realizados, behind-the-scenes, stories interactivos
+            </li>
+            <li>
+              <strong>Facebook:</strong> Promociones, eventos, interacción con
+              la comunidad local
+            </li>
+            <li>
+              <strong>TikTok:</strong> Videos cortos de técnicas,
+              transformaciones, tendencias
+            </li>
+            <li>
+              <strong>Google My Business:</strong> Optimización para búsquedas
+              locales y reseñas
+            </li>
+          </ul>
+        </div>
+
+        <h3>Campañas de Marketing Automatizado</h3>
+        <ul>
+          <li>
+            <strong>Email Marketing:</strong> Newsletters mensuales con tips de
+            cuidado, promociones personalizadas
+          </li>
+          <li>
+            <strong>SMS Marketing:</strong> Recordatorios de citas, ofertas
+            flash, cumpleaños de clientes
+          </li>
+          <li>
+            <strong>Publicidad Digital:</strong> Campañas de Facebook/Instagram
+            Ads segmentadas geográficamente
+          </li>
+          <li>
+            <strong>Retargeting:</strong> Recuperación de clientes que visitaron
+            la web sin reservar
+          </li>
+        </ul>
+
+        <h3>🌐 Presencia Online y Reputación Digital</h3>
+        <div class="grid-2">
+          <div class="grid-item">
+            <h3>Desarrollo Web Optimizado</h3>
+            <ul>
+              <li>Sitio web responsive y rápido</li>
+              <li>SEO local optimizado</li>
+              <li>Integración con sistema de reservas</li>
+              <li>Galería de trabajos realizados</li>
+            </ul>
+          </div>
+          <div class="grid-item">
+            <h3>Gestión de Reputación</h3>
+            <ul>
+              <li>Monitoreo de menciones online</li>
+              <li>Estrategia de respuesta a reseñas</li>
+              <li>Programa de incentivos para reseñas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3>🚀 Beneficios Esperados de la Implementación</h3>
+          <p>
+            La implementación integral de estas soluciones digitales
+            específicamente adaptadas para barberías permitirá:
+          </p>
+          <ul>
+            <li>
+              <strong>Aumento del 30-40%</strong> en la eficiencia operativa
+            </li>
+            <li>
+              <strong>Mejora del 50%</strong> en la satisfacción del cliente
+            </li>
+            <li>
+              <strong>Crecimiento del 25%</strong> en el número de clientes
+              nuevos
+            </li>
+            <li>
+              <strong>Incremento del 35%</strong> en la fidelización de clientes
+              existentes
+            </li>
+            <li>
+              <strong>Reducción del 60%</strong> en tareas administrativas
+              manuales
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
+    <div id="img-modal" class="modal">
+      <img src="" alt="Vista ampliada" class="modal-img" />
+    </div>
+
     <script>
-        // Variables globales
-        let currentSection = 'portada';
+      // Variables globales
+      let currentSection = "portada";
 
-        // Función para mostrar secciones
-        function showSection(sectionId) {
-            // Ocultar todas las secciones
-            const sections = document.querySelectorAll('#portada, .section');
-            sections.forEach(section => {
-                section.classList.remove('active');
-                section.style.display = 'none';
-            });
+      // Función para mostrar secciones
+      function showSection(sectionId) {
+        // Ocultar todas las secciones
+        const sections = document.querySelectorAll("#portada, .section");
+        sections.forEach((section) => {
+          section.classList.remove("active");
+          section.style.display = "none";
+        });
 
-            // Mostrar la sección seleccionada
-            const targetSection = document.getElementById(sectionId);
-            if (targetSection) {
-                targetSection.style.display = 'block';
-                setTimeout(() => {
-                    targetSection.classList.add('active');
-                }, 10);
-            }
-
-            // Actualizar navegación activa
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => link.classList.remove('active'));
-            
-            event.target.classList.add('active');
-            currentSection = sectionId;
-
-            // Cerrar menú móvil si está abierto
-            const navMenu = document.getElementById('nav-menu');
-            const hamburger = document.getElementById('hamburger');
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-
-            // Scroll suave al inicio
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Mostrar la sección seleccionada
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+          targetSection.style.display = "block";
+          setTimeout(() => {
+            targetSection.classList.add("active");
+          }, 10);
         }
 
-        // Función para toggle del menú hamburguesa
-        function toggleMenu() {
-            const navMenu = document.getElementById('nav-menu');
-            const hamburger = document.getElementById('hamburger');
-            
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
+        // Actualizar navegación activa
+        const navLinks = document.querySelectorAll(".nav-link");
+        navLinks.forEach((link) => link.classList.remove("active"));
+
+        event.target.classList.add("active");
+        currentSection = sectionId;
+
+        // Cerrar menú móvil si está abierto
+        const navMenu = document.getElementById("nav-menu");
+        const hamburger = document.getElementById("hamburger");
+        navMenu.classList.remove("active");
+        hamburger.classList.remove("active");
+
+        // Scroll suave al inicio
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      // Función para toggle del menú hamburguesa
+      function toggleMenu() {
+        const navMenu = document.getElementById("nav-menu");
+        const hamburger = document.getElementById("hamburger");
+
+        navMenu.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      }
+
+      // Cerrar menú móvil al hacer clic fuera
+      document.addEventListener("click", function (event) {
+        const navMenu = document.getElementById("nav-menu");
+        const hamburger = document.getElementById("hamburger");
+        const navbar = document.querySelector(".navbar");
+
+        if (!navbar.contains(event.target)) {
+          navMenu.classList.remove("active");
+          hamburger.classList.remove("active");
         }
+      });
 
-        // Cerrar menú móvil al hacer clic fuera
-        document.addEventListener('click', function(event) {
-            const navMenu = document.getElementById('nav-menu');
-            const hamburger = document.getElementById('hamburger');
-            const navbar = document.querySelector('.navbar');
-            
-            if (!navbar.contains(event.target)) {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-            }
+      // Animación de carga inicial
+      window.addEventListener("load", function () {
+        setTimeout(() => {
+          const portada = document.getElementById("portada");
+          portada.classList.add("loaded");
+        }, 200);
+      });
+
+      // Efecto parallax suave en scroll
+      window.addEventListener("scroll", function () {
+        const scrolled = window.pageYOffset;
+        const rate = scrolled * -0.5;
+
+        if (currentSection === "portada") {
+          const portada = document.getElementById("portada");
+          if (portada && scrolled < window.innerHeight) {
+            portada.style.transform = `translateY(${rate}px)`;
+          }
+        }
+      });
+
+      // Inicialización
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mostrar portada por defecto
+        showSection("portada");
+
+        // Precargar todas las secciones para transiciones suaves
+        const allSections = document.querySelectorAll(".section");
+        allSections.forEach((section) => {
+          section.classList.add("loading");
+        });
+      });
+
+      // Manejo de teclas para navegación
+      document.addEventListener("keydown", function (event) {
+        const sections = [
+          "portada",
+          "indice",
+          "introduccion",
+          "diagnostico",
+          "experiencia",
+          "habilitando",
+          "gestion",
+          "sectores",
+        ];
+        const currentIndex = sections.indexOf(currentSection);
+
+        if (event.key === "ArrowRight" && currentIndex < sections.length - 1) {
+          const nextSection = sections[currentIndex + 1];
+          const nextLink = document.querySelector(
+            `[onclick="showSection('${nextSection}')"]`
+          );
+          if (nextLink) nextLink.click();
+        } else if (event.key === "ArrowLeft" && currentIndex > 0) {
+          const prevSection = sections[currentIndex - 1];
+          const prevLink = document.querySelector(
+            `[onclick="showSection('${prevSection}')"]`
+          );
+          if (prevLink) prevLink.click();
+        }
+      });
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const section = document.querySelector("#introduccion");
+        const cards = section.querySelectorAll(".fade-in");
+
+        // Activar animación una vez que se entra a la sección
+        if (window.location.hash === "#introduccion") {
+          cards.forEach((card) => {
+            card.style.animationPlayState = "running";
+          });
+        }
+      });
+
+      const modal = document.getElementById("img-modal");
+      const modalImg = modal.querySelector(".modal-img");
+      const zoomables = document.querySelectorAll(".zoomable-img");
+
+      zoomables.forEach((img) => {
+        img.addEventListener("mouseenter", () => {
+          modal.style.display = "flex";
+          modalImg.src = img.src;
         });
 
-        // Animación de carga inicial
-        window.addEventListener('load', function() {
-            setTimeout(() => {
-                const portada = document.getElementById('portada');
-                portada.classList.add('loaded');
-            }, 200);
+        img.addEventListener("mouseleave", () => {
+          modal.style.display = "none";
         });
+      });
 
-        // Efecto parallax suave en scroll
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * -0.5;
-            
-            if (currentSection === 'portada') {
-                const portada = document.getElementById('portada');
-                if (portada && scrolled < window.innerHeight) {
-                    portada.style.transform = `translateY(${rate}px)`;
-                }
-            }
-        });
-
-        // Inicialización
-        document.addEventListener('DOMContentLoaded', function() {
-            // Mostrar portada por defecto
-            showSection('portada');
-            
-            // Precargar todas las secciones para transiciones suaves
-            const allSections = document.querySelectorAll('.section');
-            allSections.forEach(section => {
-                section.classList.add('loading');
-            });
-        });
-
-        // Manejo de teclas para navegación
-        document.addEventListener('keydown', function(event) {
-            const sections = ['portada', "indice", 'introduccion', 'diagnostico', 'experiencia', 'habilitando', 'gestion', 'sectores'];
-            const currentIndex = sections.indexOf(currentSection);
-            
-            if (event.key === 'ArrowRight' && currentIndex < sections.length - 1) {
-                const nextSection = sections[currentIndex + 1];
-                const nextLink = document.querySelector(`[onclick="showSection('${nextSection}')"]`);
-                if (nextLink) nextLink.click();
-            } else if (event.key === 'ArrowLeft' && currentIndex > 0) {
-                const prevSection = sections[currentIndex - 1];
-                const prevLink = document.querySelector(`[onclick="showSection('${prevSection}')"]`);
-                if (prevLink) prevLink.click();
-            }
-        });
+      modal.addEventListener("mouseleave", () => {
+        modal.style.display = "none";
+      });
     </script>
-</body>
+  </body>
 </html>
