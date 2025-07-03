@@ -218,6 +218,16 @@
            margin: 25px 0;
        }
 
+       .grid-2-img {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+
+       .img-size{
+        max-width: 70%;
+       }
+
        .grid-item {
            background: #f8f9fa;
            padding: 25px;
@@ -348,8 +358,6 @@
            align-items: center;
            background-color: rgba(0, 0, 0, 0.85);
            z-index: 9999;
-           pointer-events: none;
-           /* evita clics por error */
        }
 
        .modal-img {
